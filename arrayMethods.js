@@ -127,3 +127,10 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
+
+// loop over the array of objects, if the name is bob, add to a total variable - use reduce?
+const bobsPurchases = purchases.filter(purchase => purchase.owner === "Bob")
+const bobTotal = bobsPurchases.reduce((purchaseTotal, curPurchase)=>{
+    return purchaseTotal+curPurchase.price}, 0
+)
+console.log(bobTotal)
