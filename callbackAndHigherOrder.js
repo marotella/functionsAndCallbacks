@@ -134,7 +134,7 @@ const uniq = (arr, noCopies) => {
 */
 
 // CODE HERE
-uniq(name, uniqArr => console.log(`the new names array with all the duplicates removed is ${uniqArr}`))
+uniq(names, uniqArr => console.log(`the new names array with all the duplicates removed is ${uniqArr}`))
 
 
 
@@ -146,6 +146,10 @@ uniq(name, uniqArr => console.log(`the new names array with all the duplicates r
 */
 
 // CODE HERE 
+
+const each = (nameArr, nameOp) => {
+    nameArr.forEach((name, index) => {nameOp(name, index)})
+}
 
 
 /*
