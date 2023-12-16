@@ -193,15 +193,21 @@ var users = [
 // Do not edit the code above.
 
 // CODE HERE 
-
+const getUserById = (users, id, searchForId) => {
+    for (const user of users){
+        if (user.id === id){
+            searchForId(user)
+        }
+    }
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// getUserById(users, '16t', user => {
-//   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
-// })
+getUserById(users, '16t', user => {
+  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+})
 
 ////////// CHALLENGE //////////
 
@@ -221,6 +227,12 @@ var users = [
 
 // CODE HERE
 
+
+
+
+const addingFactory = (num1) => {
+    return (num2) => {return num1+num2}
+}
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
