@@ -40,7 +40,7 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 
 // CODE HERE
 const tax = .07
-const postTaxPrices = prices.map((price) => price * (1 + tax))/* Provide Your Callback Here );
+const postTaxPrices = prices.map((price) => price * (1 +tax))/* Provide Your Callback Here );
 
 
 
@@ -58,7 +58,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 // CODE HERE
-const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+const totalPopulation = populations.reduce((totalPop, pop) => totalPop + pop, 0)/* Provide Your Callback Here */
 
 
 
