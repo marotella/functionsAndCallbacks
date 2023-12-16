@@ -60,15 +60,17 @@ first(names, firstName => {
 */
 
 // CODE HERE
-
+const last = (arr, lastIndex)=> {
+    lastIndex(arr[arr.length -1])
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// last(names, lastName => {
-//   console.log('The last name in names is ' + lastName)
-// })
+last(names, lastName => {
+  console.log('The last name in names is ' + lastName)
+})
 
 
 
